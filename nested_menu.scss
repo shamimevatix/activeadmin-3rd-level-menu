@@ -1,0 +1,32 @@
+#header ul.tabs li:hover ul ul {
+  display: none;
+  position: relative;
+}
+
+#header ul.tabs li:hover li:hover ul {
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 170px;
+}
+
+#header ul.tabs li:hover ul li.has_nested a,
+#header ul.tabs li:hover ul li.has_nested.current a {
+  background: #7b8389 url("/assets/active_admin/nested_menu_arrow_dark.gif") no-repeat scroll calc(100% - 7px) 50%;
+  padding-right: 20px;
+}
+
+#header ul.tabs li:hover ul li.has_nested li a,
+#header ul.tabs li:hover ul li.has_nested.current li a {
+  background: none;
+  padding-right: 0px;
+}
+
+#header ul.tabs li:hover ul li.has_nested.current li a {
+  color: #cdcdcd;
+}
+
+#header ul.tabs li:hover ul li.has_nested.current a,
+#header ul.tabs li:hover ul li.has_nested.current li.current a{
+  color: #fff;
+}
